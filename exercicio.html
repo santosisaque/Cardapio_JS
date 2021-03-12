@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="exercicio.css">  
+    <script src="exercicio.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Cardápio</legend>
+
+         Carboidrato: Arroz, Pães, Massas em geral, Milho, Batata, Batata doce e Mandioca.
+    </br>
+    </br>
+         Proteína Vegetal: Feijão, Lentilhas e Ervilha.
+    </br>
+    </br>
+        Proteína Animal: Carne, Frango, Peixe e Ovo.    
+    
+    </br>
+    </br>    
+    Hortaliças e legumes: Alface, Rúcula, Agrião, Couve-flor, Brócolis, Cenoura e Beterraba.
+    </fieldset>
+    <fieldset>
+        <legend>Pedido</legend>
+        <p>
+            <label for="">Carboidrato</label>
+            <input type="text" id="txtCarboidrato" required>
+
+            <label for="">Proteina Vegetal</label>
+            <input type="text" id="txtProteinaVegetal" required>
+
+            <label for="">Proteina Animal</label>
+            <input type="text" id="txtProteinaAnimal" required>
+
+            <label for="">Hortaliças e Legumes</label>
+            <input type="text" id="txtHortalicaseLegumes" required>
+        </p>    
+        <p>       
+            <label for="">Pagamento</label>
+            <input type="text" id="txtPagamento" required>
+
+        </p>
+        <input type="button" value="Cadatrar" onclick="cadastrarPedido();"/>
+        <input type="button" value="Limpar" onclick="limparTela();"/>
+
+    </fieldset>
+    <fieldset>
+        <legend>Lista de pedidos</legend>
+        <div id="dvResultados"></div>
+    </fieldset>
+
+</body>
+</html>
